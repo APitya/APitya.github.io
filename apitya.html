@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aditya Prakash</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #A89B9D;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav (max-width: 300px) {
+  background-color: #5C164E;
+ /* -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px;*/
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: lavender;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #816C61;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 300px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Aditya Prakash</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#a1">Me</a></li>
+      <li><a href="#a2">Education</a></li>
+      <li><a href="#a3">Publication</a></li>
+      <li><a href="#a4">Talks</a></li>
+      <li><a href="#a5">Teaching</a></li>
+      <li><a href="#a6">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <img src="me.png" alt="Me" style="float:right;width:300px;height:400px;">
+    <h1 id="a1">Me</h1>
+    <p>I am a PhD student at the <a href="https://warwick.ac.uk/fac/sci/dcs/">University of Warwick</a>, under the supervision of <a href="https://www.dcs.warwick.ac.uk/~mju/">Marcin Jurdzinski</a>. I am broadly interested in everything automata and games, with an affinity towards those that involve parity conditions or counters. For my PhD, I am researching history-determinism on various models, with a focus on parity automata.</p>
+    <h1 id= "a2">Education</h1>
+	<ul>
+    <li>B.Sc(Hons.) in Mathematics and Computer Science: <a href="">Chennai Mathematical Institute</a>: August 2018 - July 2021</li>
+    <li> PhD in Computer Science: University of Warwick, October 2021- ongoing </li>
+    </ul>
+<h1 id="a3"> Publications </h1>
+
+<ul>
+<li><a href="np-hard-hd.pdf">Checking History-Determinism is NP-hard for Parity Automata</a>, preprint on arxiv</li>
+<li><a href="hdocn.pdf">On History-Deterministic One-Counter Nets</a>, with K. S. Thejaswini, appeared in FoSSaCS 2023</li> 
+</ul>
+
+<h1 id="a4"> Talks </h1>
+
+<li><a href="Highlights_2023.pdf"> Joker Games for checking History-Determinism</a>, Highlights 2023. Poster.</li>
+<li><a href="hdocn_fossacs.pdf">On History-Deterministic One-Counter Nets</a>, FoSSaCS 2023</li>
+<li><a href="hdocn_wpccs.pdf">On History-Deterministic One-Counter Nets</a>, WPCCS 2023 (most creative presentation award)</li>
+
+<h1 id="a5">Teaching </h1>
+<li>I was a Teaching Assistant in Formal Languages (CS259) and Algorithms(CS260), at the University of Warwick.</li>
+<li>I was a Teaching Assistant at Chennai Mathematical Institute for the following courses: Discrete Mathematics, Algebra III, Theory of Computation.</li>
+<li>I was also a lecturer and a resource person at Indian Maths Olympiad Training Camp (IMOTC) in the years 2019,2020 and 2021.</li>
+</article>
+</section>
+
+<footer id="a6">
+  <p>Contact:aditya.prakash@warwick.ac.uk</p>
+</footer>
+
+</body>
+</html>
+
